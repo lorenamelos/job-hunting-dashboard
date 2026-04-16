@@ -1,5 +1,7 @@
 # Job Hunting Agent Dashboard
 
+**[View Live Dashboard](https://job-hunting-dashboard.streamlit.app/)**
+
 A monitoring dashboard for my AI-powered job hunting automation pipeline.
 
 ![Dashboard Preview](docs/dashboard-preview.png)
@@ -89,7 +91,7 @@ streamlit run app.py
 3. Connect your GitHub repo
 4. Add secrets in the Streamlit Cloud dashboard:
    - `SUPABASE_URL`
-   - `SUPABASE_ANON_KEY`
+   - `SUPABASE_PUBLISHABLE_KEY`
 5. Deploy
 
 ## Tech Stack
