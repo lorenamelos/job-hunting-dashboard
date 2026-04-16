@@ -183,10 +183,10 @@ class Summary:
 
 @st.cache_resource
 def get_supabase_client():
-    """Initialize Supabase client with read-only anon key."""
+    """Initialize Supabase client with read-only publishable key."""
     try:
         url = st.secrets["SUPABASE_URL"]
-        key = st.secrets["SUPABASE_ANON_KEY"]
+        key = st.secrets["SUPABASE_PUBLISHABLE_KEY"]
         return create_client(url, key)
     except Exception as e:
         st.error(f"Failed to connect to Supabase: {e}")
